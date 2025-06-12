@@ -1,53 +1,44 @@
-// Replaced 'next/link' with a standard 'a' tag for wider compatibility in this environment.
-// In a full Next.js application, 'next/link' is typically preferred for client-side routing.
-
 export default function Hero() {
   return (
-    // Section container with a dynamic background image, ensuring it covers and centers
-    // We add a minimum height of 'screen' to ensure it takes up the full viewport height initially.
-    <section className="relative bg-[url('/images/hero-gym.jpg')] bg-cover bg-center bg-no-repeat text-white min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Overlay for text readability, adjusted for better balance. */}
-      {/* We use a gradient overlay for a more modern, dynamic look instead of a flat opacity */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/50 flex items-center justify-center p-4">
-        <div className="text-center max-w-4xl px-4 py-8 rounded-lg animate-fade-in-up"> {/* Added max-width and padding for better content framing, and a subtle animation */}
-          {/* Main heading: bold, large, with a consistent brand color for emphasis */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-5 leading-tight tracking-tight drop-shadow-xl font-['Oswald']">
-            Transform Your Body at <span className="text-red-500">PowerCore Gym</span>
-          </h1>
-          {/* Sub-heading/paragraph: clearly communicates the value proposition */}
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 font-medium drop-shadow-lg font-['Oswald']">
-            Train with experts. Build strength. Join our fitness community in Karachi today.
-          </p>
-          {/* Call-to-action button: prominent, consistent branding color, and an engaging hover effect */}
+    <section
+      className="relative bg-[url('/images/hero-gym.jpg')] bg-cover bg-center bg-no-repeat text-white min-h-[80vh] flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url('/images/hero-gym.jpg'), url('https://www.transparenttextures.com/patterns/dark-geometric.png')`,
+        backgroundBlendMode: 'overlay',
+      }}
+    >
+      {/* Gradient overlay for readability and texture */}
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/70 to-gray-900/50"></div>
+
+      <div className="relative text-center max-w-5xl px-4 py-12 sm:py-16 animate-fade-in-up">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight tracking-tight font-['Poppins'] text-white">
+          Transform Your Body at <br /><span className="bg-gradient-to-r from-red-500 to-pink-500 text-transparent bg-clip-text">PowerCore Gym</span>
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 font-medium text-gray-200 font-['Inter'] max-w-3xl mx-auto">
+          Train with world-class experts, build unstoppable strength, and join our vibrant fitness community in Karachi today.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#contact" // Using standard 'a' tag for navigation within the page
-            className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 font-['Inter'] tracking-wider"
+            href="#contact"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold py-3 px-8 rounded-full
+                       shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-50 font-['Inter'] tracking-wide"
+            aria-label="Join PowerCore Gym now"
           >
             Join Now
-            {/* Optional icon for visual appeal */}
             <svg className="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
+          <a
+            href="#services"
+            className="inline-flex items-center justify-center bg-transparent border-2 border-red-400 text-red-400 font-semibold py-3 px-8 rounded-full
+                       hover:bg-red-400 hover:text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-50 font-['Inter'] tracking-wide"
+            aria-label="Explore PowerCore Gym services"
+          >
+            Explore Services
+          </a>
         </div>
       </div>
-
-      {/* Global CSS for animations (add this to your globals.css or equivalent) */}
-      <style jsx global>{`
-        @keyframes fadeInMoveUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fadeInMoveUp 1s ease-out forwards;
-        }
-      `}</style>
     </section>
   );
 }
