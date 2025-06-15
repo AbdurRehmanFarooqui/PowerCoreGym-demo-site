@@ -21,7 +21,7 @@ export default function Home() {
       <About />
       <Services />
       <Trainers />
-      <InstagramFeed />
+      {/* <InstagramFeed /> */}
       <Contact />
       <Footer />
       <WhatsAppButton />

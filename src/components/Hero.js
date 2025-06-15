@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       className="relative bg-[url('/images/hero-gym.jpg')] bg-cover bg-center bg-no-repeat text-white min-h-[80vh] flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `url('/images/hero-gym.jpg'), url('https://www.transparenttextures.com/patterns/dark-geometric.png')`,
+        backgroundImage: `url('/images/about-gym2.jpg'), url('https://www.transparenttextures.com/patterns/dark-geometric.png')`,
         backgroundBlendMode: 'overlay',
       }}
     >

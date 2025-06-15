@@ -23,9 +23,10 @@ export default function About() {
         {/* Visual Element */}
         <div className="mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <img
-            src="https://placehold.co/600x400/4B5563/FFFFFF?text=PowerCore+Gym"
+            src="/images/about-gym.jpg"
             alt="PowerCore Gym interior"
-            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg border border-gray-700/50"
+            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg border border-gray-700/50 object-cover max-h-[400px]"
+            style={{ aspectRatio: '16/9' }}
             loading="lazy"
           />
         </div>
@@ -36,7 +37,7 @@ export default function About() {
             At PowerCore Gym, fitness is more than just lifting weights — it's about building a <span className="font-semibold text-white">holistic lifestyle</span>. 
             Located in the heart of Karachi, our gym is equipped with <span className="font-semibold text-white">state-of-the-art machines</span>, 
             <span className="font-semibold text-white">certified trainers</span>, and a <span className="font-semibold text-white">supportive community</span> 
-            ready to help you transform your life.
+            ready to help you transform your life. 
           </p>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             Whether you're a beginner taking your first steps or a seasoned athlete pushing new limits, we offer 
