@@ -34,13 +34,13 @@ export default function About() {
         {/* Text Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto font-['Inter']">
           <p className="text-gray-300 text-base md:text-lg leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            At PowerCore Gym, fitness is more than just lifting weights — it's about building a <span className="font-semibold text-white">holistic lifestyle</span>. 
+            At PowerCore Gym, fitness is more than just lifting weights — it&apos;s about building a <span className="font-semibold text-white">holistic lifestyle</span>. 
             Located in the heart of Karachi, our gym is equipped with <span className="font-semibold text-white">state-of-the-art machines</span>, 
             <span className="font-semibold text-white">certified trainers</span>, and a <span className="font-semibold text-white">supportive community</span> 
             ready to help you transform your life. 
           </p>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-            Whether you're a beginner taking your first steps or a seasoned athlete pushing new limits, we offer 
+            Whether you&apos;re a beginner taking your first steps or a seasoned athlete pushing new limits, we offer 
             <span className="font-semibold text-white">personalized programs</span>, cutting-edge facilities, and expert guidance to meet your unique goals. 
             Join us to unlock the best version of yourself, physically and mentally.
           </p>
